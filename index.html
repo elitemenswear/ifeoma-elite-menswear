@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ifeoma Elite Menswear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#" onclick="showSection('home')">Home</a></li>
+    <li><a href="#" onclick="showSection('about')">About</a></li>
+    <li><a href="#" onclick="showSection('why')">Why Us</a></li>
+    <li><a href="#" onclick="showSection('services')">Services</a></li>
+    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <h1 class="hero-name">Ifeoma Elite Menswear</h1>
+  <p class="hero-tagline">Designed for men of class</p>
+  <p class="subtext">We design and tailor quality menswear that helps men look confident, well-put-together, and ready for any occasion.</p>
+
+  <!-- Buttons -->
+  <div class="hero-buttons">
+    <a href="#" class="btn" onclick="showSection('services')">Shop Now</a>
+    <a href="#" class="btn" onclick="showSection('about')">Learn More</a>
+  </div>
+
+  <!-- Image Slider -->
+  <div class="hero-slider">
+    <img src="mens1.webp" class="hero-slide active" alt="Menswear 1">
+    
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section" style="display:none;">
+  <h2>About Us</h2>
+  <p>
+    Ifeoma Elite Menswear began as a dream to help men feel confident in every outfit they wear. 
+    From a small tailoring room to a brand known for precision and style, every stitch we sew tells a story of care, elegance, and modern fashion. 
+    Our clothes are made to make you stand out, whether at work, parties, or special events.
+  </p>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="why" class="section" style="display:none;">
+  <h2>Why Choose Us</h2>
+  <div class="cards">
+    <div class="card"><h3>Perfect Fit</h3><p>Every outfit matches your measurements exactly, for a flawless look.</p></div>
+    <div class="card"><h3>Quality Finish</h3><p>Each stitch and detail is handled with care for durability and elegance.</p></div>
+    <div class="card"><h3>Confidence Boost</h3><p>Our clothes make you feel bold, stylish, and powerful.</p></div>
+    <div class="card"><h3>Modern Designs</h3><p>We blend tradition with contemporary fashion for the  man.</p></div>
+    <div class="card"><h3>Attention to Detail</h3><p>We perfect every collar, cuff, and seam for a professional finish.</p></div>
+    <div class="card"><h3>Personalized Service</h3><p>Our team tailors recommendations for your unique style.</p></div>
+    <div class="card"><h3>Trusted Brand</h3><p>Our satisfied customers walk out feeling confident and sharp.</p></div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section" style="display:none;">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card"><h3>Custom Tailoring</h3><p>Suits, shirts, and native wears perfectly made for your body.</p></div>
+    <div class="card"><h3>Ready-to-Wear</h3><p>Quality outfits ready for men who want style without waiting.</p></div>
+    <div class="card"><h3>Native Wears</h3><p>Senator, agbada, and traditional outfits finished to perfection.</p></div>
+    <div class="card"><h3>Event Styling</h3><p>Clothes styled for weddings, parties, and special occasions.</p></div>
+    <div class="card"><h3>Office & Corporate Wears</h3><p>Smart professional outfits for work, meetings, and presentations.</p></div>
+    <div class="card"><h3>Fashion Consultation</h3><p>Advice on colors, styles, and combinations that suit you.</p></div>
+    <div class="card"><h3>Alterations & Repairs</h3><p>Quick, precise adjustments to keep your outfits looking new.</p></div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section" style="display:none;">
+  <h2>Contact Us</h2>
+  <p>Phone/WhatsApp: <a href="tel:09030768806">09030768806</a></p>
+  <p>Email: <a href="mailto:ifeomaloveth65@gmail.com">ifeomaloveth65@gmail.com</a></p>
+  <p>Reach out to us and let’s help you look your best!</p>
+</section>
+
+<!-- JavaScript -->
+<script>
+  function showSection(id){
+    let sections = document.querySelectorAll('.section');
+    sections.forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+
+  // Dynamic year for footer
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('year').textContent = new Date().getFullYear();
+  });
+</script>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© <span id="year"></span> Ifeoma Elite Menswear</p>
+  <p>Designed for men of class</p>
+</footer>
+
+</body>
+</html>
